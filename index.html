@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="description" content="Grupo F&Z">
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="user-scalable=0,width=device-width,initial-scale=1,maximum-scale=1">
+	<title>Grupo F&Z</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-app="navegacion" ng-controller="dbCrud">
+<div ng-view="" id="container"></div>
+<br>
+<!--SlideShow-->
+<div class="container">
+<!--Fin SlideShow-->
+<!--Seccion-->
+<section>
+<br>
+</section>
+</div>
+<!--Fin Seccion-->
+<!--Footer-->
+<div class="panel-footer">
+<div class="col-sm-6 col-md-6">
+    <p>&copy Copyright Grupo F&Z 2016</p>
+</div>
+<div class="col-sm-4 col-md-4 col-md-offset-2">
+    <div class="pull-right">
+        publicidad
+    </div>
+</div>
+</div>
+<!--Scripts-->
+<script type="text/javascript" src="lib/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/angular.min.js"></script>
+<script type="text/javascript" src="lib/angular-route.min.js"></script>
+<script type="text/javascript" src="js/routes/route.js"></script>
+<script type="text/javascript" src="js/controllers/all.js"></script>
+<script type="text/javascript" src="js/controllers/navegacionControl.js"></script>
+<script type="text/javascript" src="js/controllers/datos.js"></script>
+<script>
+$('document').ready(function($){
+    var header = $('.header');
+    $(window).scroll(function (){
+        if($(this).scrollTop() > 477){
+            header.addClass("scroll");
+            $('.navbar-brand p').css('font-size', '25px');
+            $('.navbar-brand p').css('margin-left', '20px');
+            $('.navbar .nav').css('margin-left', '-200px');
+        }else {
+            header.removeClass("scroll");
+            $('.navbar-brand p').css('font-size', '1em');
+            $('.navbar-brand p').css('margin-left', '270px');
+            $('.navbar .nav').css('margin-left', '0px');
+        }
+    });
+});
+</script>
+</body>
+</html>
