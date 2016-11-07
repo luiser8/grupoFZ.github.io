@@ -5,10 +5,35 @@ body{
 	padding-top: 70px;
 	font-family: Avantgarde;
 }
+a:hover{
+	outline: 0;
+}
 #logo{
 	max-width: 260px;
 	min-height: 100%;
-	margin-left: 0%;
+	margin-left: -10%;
+	margin-top: -7%;
+}
+#footer{
+	height: 100%;
+	padding-top: 40px;
+	color: #fff;
+}
+#irArriba{
+	margin-top: 40%;
+	color: #fff;
+}
+#menusFooter{
+	list-style-type: none;
+	list-style: none;
+	font-size: 12px;
+}
+a:focus, a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+.nav > li > a:focus, .nav > li > a:hover{
+	background-color: transparent;
 }
 #container{
 	margin-top: 10%;
@@ -25,7 +50,6 @@ body{
 	font-family: Nyala;
 	src: url('Nyala.ttf');
 }*/
-
 .imagenes{
 	width: 80%;
 	margin: 0 auto;
@@ -60,14 +84,12 @@ img{
 	vertical-align: top;
 	margin-top: 2px;
 }
-
 .navbar-brand p{
 	width: 100%;
 	margin-left: 10px;
 	float: none;
 	padding-left: 22%;
 }
-
 .navbar .navbar-collapse {
   	text-align: center;
   	margin-top: -1%;
@@ -83,6 +105,16 @@ img{
 	margin-left: 270px;
 }
 /*Media querys*/
+@media(max-width:767px){
+	#logo{
+		max-width: 209px;
+		margin-top: -2%;
+		margin-left: 0%;
+	}
+	.navbar-header{
+		margin-top: 70px;
+	}
+}
 @media(max-width:1167px){
 	.header p{
 		font-family: Avantgarde;
