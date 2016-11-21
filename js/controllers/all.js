@@ -16,3 +16,6 @@ webGrupofz.controller('empleo', function($scope){
 webGrupofz.controller('contacto', function($scope){
 	
 });
+webGrupofz.controller('registrate', function($scope){
+	
+});

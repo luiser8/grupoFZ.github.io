@@ -8,8 +8,14 @@ body{
 a:hover{
 	outline: 0;
 }
+#enlace{
+	color: #000;
+}
+#enlace:hover{
+	color: #808080;
+}
 #logo{
-	max-width: 260px;
+	max-width: 180px;
 	min-height: 100%;
 	margin-left: -10%;
 	margin-top: -7%;
@@ -105,14 +111,34 @@ img{
 	margin-left: 270px;
 }
 /*Media querys*/
-@media(max-width:767px){
+@media(max-width:1120px){
 	#logo{
-		max-width: 209px;
+		max-width: 155px;
 		margin-top: -2%;
 		margin-left: 0%;
 	}
 	.navbar-header{
 		margin-top: 70px;
+	}
+}
+@media(max-width:767px){
+	#logo{
+		max-width: 140px;
+		margin-top: -2%;
+		margin-left: 0%;
+	}
+	.navbar-header{
+		margin-top: 70px;
+	}
+}
+@media(max-width:920px){
+	#logo{
+		max-width: 130px;
+		margin-top: 0%;
+		margin-left: 0%;
+	}
+	.navbar .navbar-nav{
+		margin-left: -70px;
 	}
 }
 @media(max-width:1167px){

@@ -25,6 +25,10 @@ webGrupofz.config(['$routeProvider', function($routeProvider){
 		templateUrl: 'plantillas/contacto.html',
 		controller: 'contacto'
 	})
+	.when('/registrate', {
+		templateUrl: 'plantillas/registracion.html',
+		controller: 'registrate'
+	})
 	.when('/404', {
 		templateUrl: 'plantillas/404.html',
 		controller: 'fail'
